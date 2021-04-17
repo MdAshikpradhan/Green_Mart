@@ -1,0 +1,9 @@
+.navbarBg{
+    background-color: #333333;
+}
+
+.navBrand img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}

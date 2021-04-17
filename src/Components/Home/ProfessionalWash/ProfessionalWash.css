@@ -1,0 +1,10 @@
+.circleDiv{
+    position: absolute;
+    top: 610px;
+    left: 43%;
+    width: 380px;
+    height: 200px;
+    background: rgb(56, 25, 25);
+    border-radius: 50% 50% 50% 50%;
+    z-index: 1;
+}

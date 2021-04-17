@@ -1,0 +1,9 @@
+.googleLoginBtn{
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.739);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}

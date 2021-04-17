@@ -1,0 +1,26 @@
+.testimonialBg{
+    background: url(../../../images/testimonialBg.jpg);
+    color: white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonialDiv{
+    width: 550px;
+    height: 100%;
+    margin-left: 15px;
+    background-color: rgba(0, 0, 0, 0.555);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+.testimonialImg{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 15px;
+}

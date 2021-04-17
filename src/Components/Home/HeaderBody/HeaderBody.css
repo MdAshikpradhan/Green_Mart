@@ -1,0 +1,99 @@
+.carouselBgImage{
+    background: url(../../../images/carWash.jpg);
+    background-color: white;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carouselBgImage1{
+    background: url(../../../images/carWash1.jpg);
+    background-color: white;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carouselBgImage2{
+    background: url(../../../images/carWash2.jpg);
+    background-color: white;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carouselImageOverlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding-top: 80px;
+}
+
+.carouselIconBg{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #f1f1f1;
+    border-radius: 100px;
+    color: #f1f1f1;
+
+    transition: all linear .3s;
+}
+.carouselIconBg:hover{
+    background-color: white;
+    color: black;
+}
+
+.btnContainer{
+    margin-top: 70px;
+}
+
+.bannerTitleText{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #e81c2e;
+}
+
+.carouselTitle{
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.brandBtn{
+    background-color: #e81c2e;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 100px;
+    border-radius: 50px;
+    transition: all linear 1s;
+    left: 0;
+}
+
+.brandBtn:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    
+    padding: 20px 100px;
+    border-radius: 50px;
+}
+.brandBtn2{
+    background-color: rgb(255, 232, 169);
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 100px;
+    border-radius: 50px;
+    transition: all linear 1s;
+}
+
+.brandBtn2:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 20px 100px;
+    border-radius: 50px;
+}

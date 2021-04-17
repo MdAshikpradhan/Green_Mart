@@ -1,0 +1,13 @@
+.applyForm{
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+.applyInputField{
+    width: 310px;
+    border-radius: 50px;
+    padding: 15px;
+}
