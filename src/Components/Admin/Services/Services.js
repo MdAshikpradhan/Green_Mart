@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 
-const Services = () => {
+const OrderServices = () => {
     return (
         <div className="row">
             <div className="col-md-4 sideBar">
@@ -11,4 +11,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default OrderServices;

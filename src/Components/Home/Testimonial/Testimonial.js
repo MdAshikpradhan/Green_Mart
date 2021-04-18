@@ -2,15 +2,15 @@ import React from 'react';
 import './Testimonial.css';
 
 
-const Testimonial = ({client}) => {
+const Testimonial = ({testimonial}) => {
     return (
-        <div class="col-md-6 testimonialDiv mb-3">
-                <div >
-                    <div classNmae="">
-                        <p><span><i class="fas fa-quote-left"></i></span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem officiis sapiente excepturi nisi, error molestias! Earum aspernatur, temporibus sapiente nesciunt minus voluptatem, quisquam unde dignissimos laboriosam eius mollitia? Repellat, impedit? <span><i class="fas fa-quote-right"></i></span></p>
-                        <img src={client.image} className="testimonialImg" />
-                        <h4>{client.name}</h4>
-                        <p>{client.job}</p>
+        <div class="col-md-6 mb-5">
+                <div className="testimonialDiv ">
+                    <div>
+                        <p><span><i className="fas fa-quote-left text-danger"></i></span> {testimonial.description} <span><i className="fas fa-quote-right text-danger"></i></span></p>
+                        <img src={testimonial.imageUrl} className="testimonialImg" />
+                        <h4>{testimonial.name}</h4>
+                        <p>{testimonial.designation}</p>
                     </div>
                 </div>
         </div>

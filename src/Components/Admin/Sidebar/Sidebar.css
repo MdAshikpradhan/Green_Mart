@@ -1,8 +1,17 @@
+.dashboardItemContainer{
+    padding-top: 50px;
+}
 .sideBar{
-    height: 100vh;
+    /* position: fixed; */
+    height: 97vh;
+    background: linear-gradient(rgb(17, 4, 4), rgb(189, 22, 22));
+}
+
+.dashboardItemDiv{
+    padding-top: 20px;
 }
 
 .dashboardItems{
-    margin-left: 80px;
+    padding-left: 80px;
     color: white;
 } 

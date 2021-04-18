@@ -8,12 +8,13 @@ import {
 } from "react-router-dom";
 import Admin from './Components/Admin/Admin/Admin';
 import ServiceList from './Components/Admin/ServiceList/ServiceList';
-import Review from './Components/Admin/Review/Review';
+import AddReviews from './Components/Admin/AddReviews/AddReviews';
+import ServiceManage from './Components/Admin/ServiceManage/ServiceManage';
 import Services from './Components/Admin/Services/Services';
 import Login from './Components/Login/Login/Login';
 import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 import AddServices from './Components/Admin/AddServices/AddServices';
-import AddService from './Components/Admin/AddServices/AddService.js/AddService';
+
 
 
 export const UserContext = createContext();
@@ -33,8 +34,11 @@ function App() {
           <Route path="/serviceList">
             <ServiceList />
           </Route>
-          <Route path="/review">
-            <Review />
+          <Route path="/manage">
+            <ServiceManage />
+          </Route>
+          <Route path="/addReviews">
+            <AddReviews />
           </Route>
           <Route path="/login">
             <Login />

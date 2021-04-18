@@ -13,7 +13,7 @@ const Home = () => {
         <div>
             <Header />
             <ProfessionalWash />
-            <PremiumServices />
+            <PremiumServices></PremiumServices>
             <ApplyToCarWash />
             <Testimonials />
             <Products />
