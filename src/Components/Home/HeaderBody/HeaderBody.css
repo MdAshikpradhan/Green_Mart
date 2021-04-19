@@ -1,7 +1,7 @@
 .carouselBgImage{
     background: url(../../../images/carWash.jpg);
     background-color: white;
-    height: 600px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
 .carouselBgImage1{
     background: url(../../../images/carWash1.jpg);
     background-color: white;
-    height: 600px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
 .carouselBgImage2{
     background: url(../../../images/carWash2.jpg);
     background-color: white;
-    height: 600px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

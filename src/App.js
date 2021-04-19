@@ -14,6 +14,7 @@ import Services from './Components/Admin/Services/Services';
 import Login from './Components/Login/Login/Login';
 import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 import AddServices from './Components/Admin/AddServices/AddServices';
+import AddAdmin from './Components/Admin/AddAdmin/AddAdmin';
 
 
 
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <PrivateRoute path="/admin">
             <Admin /> 
+          </PrivateRoute>
+          <PrivateRoute path="/addAdmin">
+            <AddAdmin /> 
           </PrivateRoute>
           <Route path="/addServices">
             <AddServices />

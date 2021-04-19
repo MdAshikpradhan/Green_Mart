@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 import './Sidebar.css';
 
 const Sidebar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [isAdmin, setIsAdmin] = useState(false)
     return (
         <div className="dashboardItemContainer">
             <div className="dashboardItemDiv">
@@ -16,6 +19,9 @@ const Sidebar = () => {
             </div>
             <div className="dashboardItemDiv">
                 <Link to="/addServices" className="dashboardItems text-decoration-none h6"><i class="fas fa-plus"></i> Add Service</Link>
+            </div>
+            <div className="dashboardItemDiv">
+                <Link to="/addAdmin" className="dashboardItems text-decoration-none h6"><i class="fas fa-plus"></i> Add Admin</Link>
             </div>
             <div className="dashboardItemDiv">
                 <Link to="/manage" className="dashboardItems text-decoration-none h6"><i class="fas fa-tasks"></i> Manage</Link>

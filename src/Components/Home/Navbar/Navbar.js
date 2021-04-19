@@ -5,24 +5,24 @@ import navBarImg from '../../../images/navBarImg.png';
 
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light navbarBg ">
-            <div class="container-fluid">
-                <Link class="navbar-brand navBrand" to="/home">
+        <nav className="navbar navbar-expand-lg navbar-light navbarBg ">
+            <div className="container-fluid">
+                <Link className="navbar-brand navBrand" to="/home">
                     <img src={navBarImg} alt=""/>
                 </Link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-danger">
-                    <li class="nav-item">
-                     <a href=""><Link to="/home" class="nav-link" aria-current="page" href="#">Home</Link></a>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav ms-auto text-danger">
+                    <li className="nav-item">
+                     <Link to="/home" className="nav-link text-light" aria-current="page" href="#">Home</Link>
                     </li>
-                    <li class="nav-item">
-                    <Link to="/login" class="nav-link" href="#">Login</Link>
+                    <li className="nav-item">
+                    <Link to="/admin" className="nav-link text-light" href="#">Dashboard</Link>
                     </li>
-                    <li class="nav-item">
-                    <Link to="/admin" class="nav-link" href="#">Admin</Link>
+                    <li className="nav-item">
+                    <Link to="/admin" className="nav-link text-light" href="#">Admin</Link>
                     </li>
                 </ul>
                 </div>

@@ -14,10 +14,14 @@ const HeaderBody = () => {
                                 <p className="bannerTitleText">MODERN EQUIPMENT</p>
                                 <h1 className="carouselTitle">Interior or Exterior <br/> Cleaning</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Cupiditate, amet.</p>
-                                <div className="d-flex justify-content-center btnContainer">
-                                    <button className="brandBtn ms-5">Read More</button>
-                                    <button className="brandBtn2 ms-5">Read More</button>
-                                </div>
+                                <div className="row d-flex justify-content-center align-items-center">
+                                        <div className="col-md-6">
+                                            <button className="brandBtn mb-5 ms-5">Read More</button>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <button className="brandBtn2 mb-5 ms-5">Book Now</button>
+                                        </div>
+                                    </div>
                             </div>
                     </div>
                     <div class="carousel-item carouselBgImage1 text-center text-light">
@@ -25,9 +29,13 @@ const HeaderBody = () => {
                                     <p className="bannerTitleText">MODERN EQUIPMENT</p>
                                     <h1 className="carouselTitle">Contactless Car Wash</h1>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Cupiditate, amet.</p>
-                                    <div className="d-flex justify-content-center btnContainer">
-                                        <button className="brandBtn ms-5">Read More</button>
-                                        <button className="brandBtn2 ms-5">Read More</button>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <button className="brandBtn mb-5 ms-5">Read More</button>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <button className="brandBtn2 mb-5 ms-5">Book Now</button>
+                                        </div>
                                     </div>
                         </div>
                     </div>
@@ -36,19 +44,23 @@ const HeaderBody = () => {
                                     <p className="bannerTitleText">MODERN EQUIPMENT</p>
                                     <h1 className="carouselTitle">Care Service for Your Car</h1>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Cupiditate, amet.</p>
-                                    <div className="d-flex justify-content-center btnContainer">
-                                        <button className="brandBtn ms-5">Read More</button>
-                                        <button className="brandBtn2 ms-5">Read More</button>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <button className="brandBtn mb-5 ms-5">Read More</button>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <button className="brandBtn2 mb-5 ms-5">Book Now</button>
+                                        </div>
                                     </div>
                         </div>
                     </div>
                 </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carouselIconBg d-flex justify-content-center align-items-center" aria-hidden="false"> <i class="fas fa-chevron-right"></i> </span>
+                <span class="carouselIconBg d-flex justify-content-center align-items-center" aria-hidden="true"> <i class="fas fa-chevron-right"></i> </span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carouselIconBg d-flex justify-content-center align-items-center" aria-hidden="false"> <i class="fas fa-chevron-left"></i> </span>
+                <span class="carouselIconBg d-flex justify-content-center align-items-center" aria-hidden="true"> <i class="fas fa-chevron-left"></i> </span>
                 <span class="visually-hidden">Next</span>
             </button>
             </div>

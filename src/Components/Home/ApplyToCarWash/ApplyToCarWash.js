@@ -4,7 +4,7 @@ import carWashingMachine from '../../../images/carWashingMachine.webp';
 
 const ApplyToCarWash = () => {
     return (
-        <div className="container-fluid mt-5 pt-5 pb-5">
+        <div className="container mt-5 pt-5 pb-5">
             <div className="row">
                 <div className="col-md-3 mt-5">
                     <img className="w-100" src={carWashingMachine} alt=""/>

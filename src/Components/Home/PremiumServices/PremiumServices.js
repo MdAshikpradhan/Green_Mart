@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import PremiumService from '../PremiumService/PremiumService';
 import './PremiumServices.css';
 
 const PremiumServices = () => {
     const [premiumServices, setPremiumServices] = useState([])
-    console.log(premiumServices, 'premiumServices');
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://lit-shore-85433.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setPremiumServices(data));
-    }, [])
+    }, [premiumServices])
     return (
         <div className="container-fluid  blackStripeBg mb-3 pb-5">
             <div className="text-center">
@@ -21,24 +21,7 @@ const PremiumServices = () => {
                 <div className="container ms-auto">
                         <div className="row">
                             {
-                            premiumServices.map(pmService => (
-                            <div className="col-md-4 mb-3">
-                                <div className="card p-3">
-                                    <img className="w-50" src={pmService.imageUrl} alt=""/>
-                                    <h3>{pmService.service}</h3>
-                                    <h3>{pmService.duration}</h3>
-                                    <h3><span className="text-danger">${pmService.price}</span></h3>
-                                    <span>{pmService.description}</span>
-                                    <span><span className="text-success"><i class="fas fa-check"></i></span> {pmService.serviceItemI}</span>
-                                    <span><span className="text-success"><i class="fas fa-check"></i></span> {pmService.serviceItemII}</span>
-                                    <span><span className="text-success"><i class="fas fa-check"></i></span> {pmService.serviceItemIII}</span>
-                                    <span><span className="text-success"><i class="fas fa-check"></i></span> {pmService.serviceItemIv}</span>
-                                    <form>
-                                    <button className="bg-danger w-50 text-light text-center circle p-2 mt-2">Order Now</button>
-                                    </form>
-                                </div>
-                            </div>
-                            ))
+                            premiumServices.map(pmService => <PremiumService  pmService={pmService}></PremiumService>)
                             }
                         </div>
                 </div>

@@ -6,3 +6,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.serviceCard{
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.PremiumServiceImage{
+    width: 350px;
+    height: 200px;
+    padding: 1px;
+    border-radius: 10px 10px 0 0;
+}

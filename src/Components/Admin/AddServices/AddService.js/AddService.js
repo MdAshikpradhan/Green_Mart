@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import { UserContext } from '../../../../App';
 
 const AddService = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const { register, handleSubmit, errors } = useForm();
     const [imageUrl, setImageUrl] = useState(null);
     const onSubmit = data => {
-        const productData = {
+        const serviceData = {
             service: data.service,
             duration: data.duration,
             price: data.price,
@@ -17,14 +19,14 @@ const AddService = () => {
             serviceItemIv: data.serviceItemIv,
             imageUrl: imageUrl 
         };
-        const url = `http://localhost:5000/addServices`
+        const url = `https://lit-shore-85433.herokuapp.com/addServices`
 
         fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(productData)
+            body: JSON.stringify(serviceData)
         })
         .then(res => console.log('server side response', res))
     };

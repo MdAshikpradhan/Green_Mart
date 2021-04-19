@@ -13,20 +13,20 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-3 text-center footerColum">
                         <i className="fas fa-phone footerIcon"></i>
-                        <h6>0(500)680-50-36</h6>
+                        <h6>+8801944576111</h6>
                     </div>
                     <div className="col-md-3 text-center footerColum"> 
                         <i className="fas fa-map-marker-alt footerIcon"></i>
                         <h6>Car Washing Point</h6>
-                        <p>1353 Locust St, Kansas City, MO 64106</p>
+                        <p>Zoo Road, Mirpur-1, Dhaka-1216, Bangladesh</p>
                     </div>
                     <div className="col-md-3 text-center footerColum">
                         <i className="fas fa-envelope footerIcon"></i>
-                        <p> info@aql-theme.com <br/> support@aql-theme.com</p>
+                        <p> alif-car-wash@alifcawash.com <br/> alifShikder@alifcarwash.com</p>
                     </div>
                     <div className="col-md-3 text-center footerColum">
                         <i className="far fa-clock footerIcon"></i>
-                        <h6><span className="text-danger">Mon-Sat:</span> 07:00-22:00</h6>
+                        <h6><span className="commonColor">Mon-Sat:</span> 07:00-22:00</h6>
                     </div>
                 </div>
             </div>

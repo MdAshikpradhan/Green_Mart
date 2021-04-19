@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 
 
 const ReviewsManage = () => {
-    const [services, setServices] = useState([])
-    console.log(services)
+    const [reviews, setReviews] = useState([])
+    console.log(reviews)
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://lit-shore-85433.herokuapp.com/reviews')
         .then(res => res.json())
-        .then(data => setServices(data));
-    }, [])
+        .then(data => setReviews(data));
+    }, [reviews])
 
 
     const deleteService = (id) => {
         console.log(id)
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://lit-shore-85433.herokuapp.com/delete/ids/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -25,14 +25,14 @@ const ReviewsManage = () => {
     return (
         <div>
             {
-                    services.map(service => <div service={service}>
+                    reviews.map(reviews => <div reviews={reviews}>
                         <div className="d-flex justify-content-between align-items-center p-1 bg-light rounded mt-3">
-                            <h6>{service.service}</h6>
-                            <h6>{service.wight}</h6>
-                            <h6>{service.price}</h6>
+                            <h6>{reviews.service}</h6>
+                            <h6>{reviews.wight}</h6>
+                            <h6>{reviews.price}</h6>
                             <span>
                             <button className="bg-success text-light  rounded"><i className="fas fa-pen"></i></button><span>&nbsp;</span>
-                            <button type="button" onClick={() => deleteService(`${service._id}`)} className="bg-danger text-light  rounded"><i className="far fa-trash-alt "></i></button>
+                            <button type="button" onClick={() => deleteService(`${reviews._id}`)} className="bg-danger text-light  rounded"><i className="far fa-trash-alt "></i></button>
                             </span>
                         </div>
                     </div>)
