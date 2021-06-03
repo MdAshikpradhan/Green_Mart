@@ -1,5 +1,7 @@
-Green Mart
+This is a full stack website
+Authentication with admin panel
+Admin can able to add services and manage them.
+Customer can book for service and able to review about service.
+Tools: React.js, Javascript, MongDb, express, Node.js, Bootstrap, Html.
 
-Server Link : https://github.com/Porgramming-Hero-web-course/full-stack-server-MdAshikpradhan
-
-Live site Link: https://valley-store.web.app/
+Live Link: https://alif-car-wash.web.app/
